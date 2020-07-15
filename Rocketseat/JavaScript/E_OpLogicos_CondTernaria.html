@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Op.Lógico e Cond.Ternária</title>
+  </head>
+  <body>
+    <script>
+      // Opeadores: AND '&&'', OR '||', NOT '!==' '!='
+      var sexo = "M",
+        idade = 23;
+
+      if (sexo === "M" || idade >= 10) {
+        console.log("Ok");
+      }
+      // VERIFICAR A DESIGUALDADE ENTRE VARIÁVEIS
+      var sexo = "F";
+      if (sexo !== "M") {
+        console.log("Ok");
+      }
+
+      //armazenar o valor das condições em variáveis ( isso é algo que vamos fazer muito em JS)
+
+      //pode-se fazer dessa forma:
+      /*  var sexo = "M";
+      if (sexo === "M") {
+        var masculino = true;
+      } else {
+        var masculino = false;
+      } */
+
+      // ou pode-se chamar a variável masculino sem definir seu valor para fora da estrutura IF, conforme abaixo
+      /* var sexo = "M";
+      var masculino;
+
+      if (sexo === "M") {
+        masculino = true;
+      } else {
+        masculino = false;
+      } */
+
+      // dá para diminuir ainda mais:
+      var sexo = "F";
+      var masculino = sexo === "M";
+
+      console.log(masculino);
+
+// CONDIÇÕES TERNÁRIAS
+//A condição ternária se aplica quando temos um If e logo depois um else, ou seja quando temos apenas duas verificações dentro do If. Utilizando os exemplos acima, podemos reduzir essa verificação da seguinte maneira:
+
+var sexo = 'F';
+var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino'; 
+//armazenamos a condição ternária na váriável retorno, depois do símbolo de interrogação (?) , passamos o primeiro elemento da nossa verificação. depois colocamos dois pontos (:)
+//isso é uma condição ternária, quando na mesma linha utilizamos a interrogação e os dois pontos para uma verificação de condição.
+console.log(retorno);
+
+    </script>
+  </body>
+</html>

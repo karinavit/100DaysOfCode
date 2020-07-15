@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Funções</title>
+  </head>
+  <body>
+    <script>
+      /*    function retornaSexo(sexo){
+        if(sexo === 'M') {
+          return 'Maculino'
+        }else if (sexo === 'F'){
+          return 'Feminino'
+        }else{
+          return 'Outro';
+        }
+      } */
+      // outra opção quando vamos verificar uma mesma variável diversas vezes é usar o switch case.
+      function retornaSexo(sexo) {
+        switch (sexo) {
+          case "M":
+            return "Masculino";
+          case "F":
+            return "Feminino";
+          defaut:
+          return "Outro"
+        }
+      }
+
+      var resultado = retornaSexo("M");
+      console.log(resultado);
+    </script>
+  </body>
+</html>

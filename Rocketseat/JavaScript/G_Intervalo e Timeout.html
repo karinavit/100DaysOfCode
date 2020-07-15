@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Intervalo e Timeout</title>
+  </head>
+  <body>
+    <script>
+      // Um intervalo dentro do JS é alguma função que ela executa várias vezes dentro de um intervalo de tempo.
+      function exibeAlgo(){
+          console.log('Hello Word');
+
+      }
+      //setInterval(exibeAlgo,1000); //aqui a cada 1 segundo essa função será executada.
+      // outro ponto importante, quando passamos a função como parâmetro não é necessário usar os parênteses logo após o nome da função, pois quando usamos os parenteses acabamos executando a função.
+
+       setTimeout(exibeAlgo, 5000); // ele executa apenas 1 vez, porém ele dá o intervalo para que a função seja executada.
+
+
+    </script>
+  </body>
+</html>

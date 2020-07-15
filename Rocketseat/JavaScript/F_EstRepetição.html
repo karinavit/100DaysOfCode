@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Estruturas de Repetição</title>
+  </head>
+  <body>
+    <script>
+      //Vamos entender as estruturas de repetição FOR E WHILE
+
+      //FOR
+      //for 'basicamente no for criamos um intervalo'
+      //neste exemplo se eu quero um intervalo do número 0 até o 100, ENTÃO:
+      // for(var i = 0 // 'aqui é o valor inicial da minha variável'; i<= 100 // 'aqui é a condição, neste caso enquanto o i for menor ou igual a 100'; i++ //'aqui é a ação, ou seja, enquanto for menor que 100 eu vou somar mais 1')
+
+      // for (var i = 0; i <= 100; i++) {
+      //   console.log(i);
+      // }
+
+      //WHILE
+      /* ao usar o while é um pouco diferente:
+      1º você define o valor inicial :  
+      var j = 0;
+     
+      while (j <= 100) já coloca direto a condição {
+        console.log(j);
+
+        j++; aqui dá um j++ para que ele some mais 1
+      }
+ */
+      // var j = 0;
+      // while (j <= 100) {
+      //   console.log(j);
+      //   j++;
+      // }
+
+      //QUANDO UTILIZAR?
+      //Utilize o FOR quando você souber o intervalo
+
+      //No wihle não é recomendável utilizar como foi descrito acima. utilizamos o WHILE quando não sabemos quantas interações serão necessaŕias, por exemplo:
+      var j = 350000; //vamos supor que temos um número bem grande
+      while (j > 50) {
+        // enquanto que o j for maior que 50
+        console.log(j); // vamos executar o conteúdo dele
+          j /= 5; // não conseguimos saber quantas interações serão necessárias para que nosso j seja menor que 50. Neste exemplo o nosso j teve 6 interações
+      }
+    </script>
+  </body>
+</html>
