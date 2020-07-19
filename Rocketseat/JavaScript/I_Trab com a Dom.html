@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Trabalhando com a Dom</title>
+  </head>
+  <body>
+    <!-- Vamos ver nesta aula como referenciar elementos do html para o JS, de modo a não poluir o nosso documento html-->
+    <div id="app">
+      <input type="text" name="nome" />
+      <button class="botao">Adicionar</button>
+    </div>
+    <script>
+      var inputElement = document.querySelector("input[name=nome]");
+      var btnElement = document.querySelector("button.botao");
+      btnElement.onclick = function () {
+        var text = inputElement.value;
+        alert(text);
+      };
+      // document referencia a árvore de elementos do html
+      // o querySelector, permite "andar" pela DOM até encontrar o elemento. porém podemos direcionar exatamente onde está aquele elemento.document.querySelector('body div#app input');De todo o modo o query selector sempre retorna um único elemento, exceto quando vc usa o querySelectorAll
+
+      // outras formas de pegar elementos:
+      /* document.getElementById('nome'); o id é sempre de uso único em um documento.
+
+     document.getElementsByTagName('input')[2]; não dá para garantir que ele seja único, portanto ele sempre retorna um vetor, então se eu quero saber qual tag ele pegou adicionamos um colchete ao final do console log, de modo a referenciar qual elemento estamos pegando.
+
+     document.getElementsByClassName('nome')[2]; idem explicação acima, 
+ */
+    </script>
+  </body>
+</html>
